@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            cursor: pointer;
+        }
+        .mydiv2{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv1">五一放假计划</div>
+    <div class="mydiv2"></div>
+    <div class="mydiv3">我要获取的内容</div>
+    <div class="mydiv4">原始内容</div>
+    <script>
+        console.log('今天星期一');
+        console.table({name:'何乾',age:'22',shengao:'154cm'});
+        document.write('今天是五一节');
+        document.querySelector('.mydiv1').onclick = function(){
+            console.log('点击div输出内容');
+            document.querySelector('.mydiv1').style.backgroundColor='yellow';
+            document.querySelector('.mydiv3').style.backgroundColor='yellow';
+            console.log(document.querySelector('.mydiv4').innerHTML);
+        }
+        document.querySelector('.mydiv4').innerHTML='修改之后的内容';
+        console.log(document.querySelector('.mydiv3').innerHTML);
+        confirm('你确定执行该内容吗？');
+        console.error('错误');
+        console.warn('警告');
+    </script>
+</body>
+</html>

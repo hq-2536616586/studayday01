@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //声明变量未赋值，返回值为undefined
+        var a;
+        console.log(a);
+        console.log(typeof a);
+      //获取对象中不存在的属性
+        var person = {name:'张三',age:20,school:'北京大学'};
+        console.log(person.adress);//adress这个属性在person这个对象中不存在，返回值undefined
+      //访问数组中不存在的元素
+        var shuzu = [0,1,2,3,4,5,6];
+        console.log(shuzu[9]);//shuzu[9]这个元素在数组中不存在，返回值为undefined
+      //函数没有返回值
+        var b = function(){};
+        console.log(b());
+        function d(){};
+        console.log(d());
+    </script>
+</body>
+</html>
